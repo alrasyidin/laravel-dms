@@ -14,7 +14,7 @@
             <!-- Box primary-->
             <div class="box box-primary">
                 <div class="box-header with-border">
-                    <a href="{{ route('branches', [], false) }}" class="btn btn-default">Branches</a>
+                    <a href="{{ route('branches', [], false) }}" class="btn btn-default">Fakultas</a>
                 </div>
                 <div class="box-body">
                     @if (count($departments) > 0)
@@ -24,7 +24,7 @@
                             @endforeach
                         </ul>
                     @else
-                        <h3 class="no-content">No Departments available for the {{ $branch->branch_name }} Branch</h3>
+                        <h3 class="no-content">Tidak ada jurusan tersedia untuk {{ $branch->branch_name }} Fakultas</h3>
                     @endif
                 </div>
             </div>

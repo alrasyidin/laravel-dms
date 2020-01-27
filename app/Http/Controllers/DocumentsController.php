@@ -74,7 +74,7 @@ class DocumentsController extends Controller
             ->paginate(env('PAGE_SIZE', 10));
 
         $data = [
-            'title' => 'Documents',
+            'title' => 'Dokumen',
             'documents' => $documents,
             'branches' => $branches,
         ];
@@ -105,7 +105,7 @@ class DocumentsController extends Controller
             ->toArray();
 
         $data = [
-            'title' => 'Add Document',
+            'title' => 'Tambah Dokumen',
             'branches' => $branches,
             'categories' => $categories,
         ];
@@ -199,7 +199,7 @@ class DocumentsController extends Controller
             ->toArray();
 
         $data = [
-            'title' => 'Edit Document',
+            'title' => 'Edit Dokumen',
             'document' => $document,
             'branches' => $branches,
             'categories' => $categories,
@@ -397,6 +397,7 @@ class DocumentsController extends Controller
     private function checkCredentials()
     {
         $user = auth()->user();
+        
         if (!is_admin() && !$user->branch_id && !$user->department_id) {
             return false;
         }

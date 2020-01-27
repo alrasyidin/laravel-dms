@@ -6,7 +6,7 @@
             <!-- Content Header (Page header) -->
             <section class="content-header">
                 <h1>Dashboard
-                    <small>General Statistics</small></h1>
+                    <small>Statistik Umum</small></h1>
                 @include('includes/breadcrumbs')
             </section>
             <!-- Main content -->
@@ -20,9 +20,9 @@
                                 <h3>{{ $total_number_of_documents }}</h3>
                                 <p>
                                     @if ($total_number_of_documents == 1)
-                                        Document
+                                        Dokumen
                                     @else
-                                        Documents
+                                        Dokumen
                                     @endif
                                 </p>
                             </div>
@@ -41,7 +41,7 @@
                                     @if ($total_number_of_users == 1)
                                         User
                                     @else
-                                        Users
+                                        User
                                     @endif
                                 </p>
                             </div>
@@ -60,9 +60,9 @@
                                 <h3>{{ $total_number_of_branches }}</h3>
                                 <p>
                                     @if ($total_number_of_branches == 1)
-                                        Branch
+                                        Fakultas
                                     @else
-                                        Branches
+                                        Fakultas
                                     @endif
                                 </p>
                             </div>
@@ -80,9 +80,9 @@
                             <h3>{{ $total_number_of_departments }}</h3>
                                 <p>
                                     @if ($total_number_of_departments == 1)
-                                        Department
+                                        Jurusan
                                     @else
-                                        Departments
+                                        Jurusan
                                     @endif
                                 </p>
                             </div>

@@ -17,7 +17,7 @@
                     <!-- Box primary-->
                     <div class="box box-primary">
                         <div class="box-header with-border">
-                            <a href="{{ route('departments', [], false) }}" class="btn btn-default">Departments</a>
+                            <a href="{{ route('departments', [], false) }}" class="btn btn-default">Jurusan</a>
                         </div>
                         
                         {!! Form::open(['action' => 'DepartmentsController@store', 'method' => 'POST', 'autocomplete' => 'off']) !!}
@@ -31,7 +31,7 @@
                                         </span>
                                     @endif
                                 </div>
-                                <span class="text-danger">* <em>required</em></span>
+                                <span class="text-danger lead">* <em>wajib diisi</em></span>
                             </div>
                             <!-- /.box-body -->
                             <div class="box-footer">

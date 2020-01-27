@@ -21,7 +21,7 @@
                     <table class="table table-striped">
                         <tbody>
                             <tr>
-                                <th>Branch Name</th>
+                                <th>Nama Fakultas</th>
                                 <th>&nbsp;</th>
                             </tr>
 
@@ -33,9 +33,9 @@
                                     {!! Html::nbsp(3) !!}
                                     <a href="{{ route('branches.delete', [$branch->branch_id], false) }}" title="Delete Branch" class="text-danger u">Delete</a>
                                     {!! Html::nbsp(3) !!}
-                                    <a href="{{ route('branches.departments', [$branch->branch_id], false) }}" title="View Departments" class="text-info u">View Departments</a>
+                                    <a href="{{ route('branches.departments', [$branch->branch_id], false) }}" title="View Departments" class="text-info u">Lihat Jurusan</a>
                                     {!! Html::nbsp(3) !!}
-                                    <a href="{{ route('branches.add_departments', [$branch->branch_id], false) }}" title="Add Departments" class="text-info u">Add Departments</a>
+                                    <a href="{{ route('branches.add_departments', [$branch->branch_id], false) }}" title="Add Departments" class="text-info u">Tambah Jurusan</a>
                                 </td>
                             </tr>
                             @endforeach
@@ -46,7 +46,7 @@
                 {{ $branches->appends($_GET)->links('includes/pagination') }}
                 @else
                 <div class="box-body">
-                    <h3 class="no-content">No Branches available</h3>
+                    <h3 class="no-content">Tidak ada data fakultas</h3>
                 </div>
                 @endif
             </div>

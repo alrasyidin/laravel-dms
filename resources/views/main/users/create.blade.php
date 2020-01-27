@@ -61,7 +61,7 @@
                                 </div>
                                 <div class="form-group{{ $errors->has('branch') ? ' has-error' : '' }}">
                                     {{ Form::label('branch', 'Branch') }}
-                                    {{ Form::select('branch', $branches, null, ['placeholder' => 'Select Branch', 'class' => 'form-control select2', 'id' => 'branch',]) }}
+                                    {{ Form::select('branch', $branches, null, ['placeholder' => 'Pilih Fakultas', 'class' => 'form-control select2', 'id' => 'branch',]) }}
                                     @if ($errors->has('branch'))
                                     <span class="help-block">
                                     {{ $errors->first('branch') }}
@@ -70,7 +70,7 @@
                                 </div>
                                 <div class="form-group{{ $errors->has('department') ? ' has-error' : '' }}">
                                     {{ Form::label('department', 'Department') }}
-                                    {{ Form::select('department', [], null, ['placeholder' => 'Select Branch First', 'class' => 'form-control select2', 'id' => 'department',]) }}
+                                    {{ Form::select('department', [], null, ['placeholder' => 'Pilih Fakultas Dulu', 'class' => 'form-control select2', 'id' => 'department',]) }}
                                     @if ($errors->has('department'))
                                     <span class="help-block">
                                     {{ $errors->first('department') }}
@@ -82,7 +82,7 @@
                                         {{ Form::checkbox('is_admin', 'yes') }} Admin 
                                     </label>
                                 </div>
-                                <span class="text-danger">* <em>required</em></span>
+                                <span class="text-danger lead">* <em>wajib diisi</em></span>
                             </div>
                             <!-- /.box-body -->
                             <div class="box-footer">

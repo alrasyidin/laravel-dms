@@ -20,13 +20,13 @@
                 <div class="box-header with-border">
                     {!! Form::open(['id' => 'search_form', 'method' => 'GET', 'autocomplete' => 'off', 'class' => 'form-inline']) !!}
                         <div class="form-group">
-                            {{ Form::text('title_desc', '', ['class' => 'form-control', 'placeholder' => 'Title or Description...',]) }}
+                            {{ Form::text('title_desc', '', ['class' => 'form-control', 'placeholder' => 'Judul or Deskripsi...',]) }}
                         </div>
                         <div class="form-group">
-                            {{ Form::text('start_date', '', ['class' => 'form-control date', 'placeholder' => 'Start Date...',]) }}
+                            {{ Form::text('start_date', '', ['class' => 'form-control date', 'placeholder' => 'Tanggal Dimulai...',]) }}
                         </div>
                         <div class="form-group">
-                            {{ Form::text('end_date', '', ['class' => 'form-control date', 'placeholder' => 'End Date...',]) }}
+                            {{ Form::text('end_date', '', ['class' => 'form-control date', 'placeholder' => 'Tanggal Selesai...',]) }}
                         </div>
                         @if (is_admin())
                         <div class="form-group">
@@ -37,7 +37,7 @@
                         </div>
                         @endif
                         <div class="form-group submit">
-                            {{ Form::submit('Search', 
+                            {{ Form::submit('Cari', 
                                 ['class' => 'btn btn-primary']) 
                             }}
                         </div>
@@ -48,14 +48,14 @@
                     <table class="table table-striped">
                         <tbody>
                             <tr>
-                                <th>Title</th>
-                                <th>Description</th>
-                                <th>Category</th>
-                                <th>Creation Date</th>
-                                <th>Branch</th>
-                                <th>Department</th>
-                                <th>Uploaded By</th>
-                                <th>Stored On</th>
+                                <th>Judul</th>
+                                <th>Deskripsi</th>
+                                <th>Kategori</th>
+                                <th>Tanggal Dibuat</th>
+                                <th>Fakultas</th>
+                                <th>Jurusan</th>
+                                <th>Diupload Oleh</th>
+                                <th>Disimpan pada</th>
                                 <th>&nbsp;</th>
                             </tr>
 

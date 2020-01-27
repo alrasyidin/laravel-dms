@@ -161,11 +161,11 @@ class UsersController extends Controller
     public function storePassword(Request $request, $user_id)
     {
         $this->validate($request,
-            ['password' => 'required|string|min:8|confirmed'],
+            ['password' => 'required|string|min:6|confirmed'],
             [
                 'password.required' => 'Password is required',
                 'password.confirmed' => 'Passwords must match',
-                'password.min' => 'Password must be a minimum of 8 characters',
+                'password.min' => 'Password must be a minimum of 6 characters',
             ]
         );
 

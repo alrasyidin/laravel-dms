@@ -17,7 +17,7 @@
                     <!-- Box primary-->
                     <div class="box box-primary">
                         <div class="box-header with-border">
-                            <a href="{{ route('departments', [], false) }}" class="btn btn-default">Departments</a>
+                            <a href="{{ route('departments', [], false) }}" class="btn btn-default">Jurusan</a>
                         </div>
 
                         @if (count($branches))
@@ -37,7 +37,7 @@
                                         </span>
                                     @endif
                                 </div>
-                                <span class="text-danger">* <em>required</em></span>
+                                <span class="text-danger lead">* <em>wajib diisi</em></span>
                             </div>
                             <!-- /.box-body -->
                             <div class="box-footer">
@@ -48,7 +48,7 @@
                         {!! Form::close() !!}
                         @else
                         <div class="box-body">
-                            <h3 class="no-content">No Branches available for adding.</h3>
+                            <h3 class="no-content">Tidak ada fakultas yang tersedia untuk ditambahkan.</h3>
                         </div> 
                         @endif
                     </div>

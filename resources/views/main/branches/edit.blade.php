@@ -17,7 +17,7 @@
                     <!-- Box primary-->
                     <div class="box box-primary">
                         <div class="box-header with-border">
-                            <a href="{{ route('branches', [], false) }}" class="btn btn-default">Branches</a>
+                            <a href="{{ route('branches', [], false) }}" class="btn btn-default">Fakultas</a>
                         </div>
                         
                         {!! Form::open(['action' => ['BranchesController@update', $branch->branch_id], 'method' => 'POST', 'autocomplete' => 'off']) !!}
@@ -31,7 +31,7 @@
                                         </span>
                                     @endif
                                 </div>
-                                <span class="text-danger">* <em>required</em></span>
+                                <span class="text-danger lead">* <em>wajib diisi</em></span>
                             </div>
                             <!-- /.box-body -->
                             <div class="box-footer">

@@ -14,7 +14,7 @@
 
             <li class="{!! set_multilevel_active(['documents', 'document_categories']) !!}treeview">
                 <a href="#">
-                    <i class="fa fa-file-archive-o"></i><span> Documents</span>
+                    <i class="fa fa-file-archive-o"></i><span> Dokumen</span>
                     <span class="pull-right-container">
                         <i class="fa fa-angle-left pull-right"></i>
                     </span>
@@ -22,7 +22,7 @@
                 <ul class="treeview-menu">
                     <li class="{!! set_multilevel_active(['documents',]) !!}treeview">
                         <a href="#">
-                            <i class="fa fa-circle-o"></i> All Documents
+                            <i class="fa fa-circle-o"></i> Semua Dokumen
                             <span class="pull-right-container">
                                 <i class="fa fa-angle-left pull-right"></i>
                             </span>
@@ -30,12 +30,12 @@
                         <ul class="treeview-menu">
                             <li {!! set_active('documents', 'edit,delete, view_files') !!}>
                                 <a href="{{ route('documents', [], false) }}">
-                                    <i class="fa fa-circle-o"></i> Manage Documents
+                                    <i class="fa fa-circle-o"></i> Kelola Dokumen
                                 </a>
                             </li>
                             <li {!! set_active('documents/add') !!}>
                                 <a href="{{ route('documents.add', [], false) }}">
-                                    <i class="fa fa-circle-o"></i> Add Document
+                                    <i class="fa fa-circle-o"></i> Tambah Document
                                 </a>
                             </li>
                         </ul>
@@ -44,7 +44,7 @@
                     @if (is_admin())
                     <li class="{!! set_multilevel_active(['document_categories',]) !!}treeview"> 
                         <a href="#">
-                            <i class="fa fa-circle-o"></i> Document Categories
+                            <i class="fa fa-circle-o"></i> Kategori Dokumen
                             <span class="pull-right-container">
                                 <i class="fa fa-angle-left pull-right"></i>
                             </span>
@@ -52,13 +52,13 @@
                         <ul class="treeview-menu">
                             <li {!! set_active('document_categories', 'edit, delete') !!}>
                                 <a href="{{ route('doc_categories', [], false) }}">
-                                    <i class="fa fa-circle-o"></i> Manage Categories
+                                    <i class="fa fa-circle-o"></i> Kelola Kategori
                                 </a>
                             </li>
                             <li {!! set_active('document_categories/add') !!}>
                                 <a href="{{ route('doc_categories.add', [], false) }}">
                                     <i class="fa fa-circle-o"></i> 
-                                    Add Category
+                                    Tambah Kategori
                                 </a>
                             </li>
                         </ul>
@@ -71,7 +71,7 @@
             @if (is_admin())
             <li class="{!! set_multilevel_active(['branches']) !!}treeview">
                 <a href="#">
-                    <i class="fa fa-home"></i><span> Branches</span>
+                    <i class="fa fa-home"></i><span> Fakultas</span>
                     <span class="pull-right-container">
                         <i class="fa fa-angle-left pull-right"></i>
                     </span>
@@ -79,12 +79,12 @@
                 <ul class="treeview-menu">
                     <li {!! set_active('branches', 'edit,delete,view_departments,add_departments') !!}>
                         <a href="{{ route('branches', [], false) }}">
-                            <i class="fa fa-circle-o"></i> Manage Branches
+                            <i class="fa fa-circle-o"></i> Kelola Fakultas
                         </a>
                     </li>
                     <li {!! set_active('branches/add') !!}>
                         <a href="{{ route('branches.add', [], false) }}">
-                            <i class="fa fa-circle-o"></i> Add Branch
+                            <i class="fa fa-circle-o"></i> Tambah Fakultas
                         </a>
                     </li>
                 </ul>
@@ -94,7 +94,7 @@
             @if (is_admin())
             <li class="{!! set_multilevel_active(['departments']) !!}treeview">
                 <a href="#">
-                    <i class="fa fa-hospital-o"></i><span> Departments</span>
+                    <i class="fa fa-hospital-o"></i><span> Jurusan</span>
                     <span class="pull-right-container">
                         <i class="fa fa-angle-left pull-right"></i>
                     </span>
@@ -102,12 +102,12 @@
                 <ul class="treeview-menu">
                     <li {!! set_active('departments', 'edit,delete,view_branches,add_branches') !!}>
                         <a href="{{ route('departments', [], false) }}">
-                            <i class="fa fa-circle-o"></i> Manage Departments
+                            <i class="fa fa-circle-o"></i> Kelola Jurusan
                         </a>
                     </li>
                     <li {!! set_active('departments/add') !!}>
                         <a href="{{ route('departments.add', [], false) }}">
-                            <i class="fa fa-circle-o"></i> Add Department
+                            <i class="fa fa-circle-o"></i> Tambah Jurusan
                         </a>
                     </li>
                 </ul>
@@ -125,12 +125,12 @@
                 <ul class="treeview-menu">
                     <li {!! set_active('users', 'edit,delete,change_password') !!}>
                         <a href="{{ route('users', [], false) }}">
-                            <i class="fa fa-circle-o"></i> Manage Users
+                            <i class="fa fa-circle-o"></i> Kelola Users
                         </a>
                     </li>
                     <li {!! set_active('users/add') !!}>
                         <a href="{{ route('users.add', [], false) }}">
-                            <i class="fa fa-circle-o"></i> Add User
+                            <i class="fa fa-circle-o"></i> Tambah User
                         </a>
                     </li>
                 </ul>

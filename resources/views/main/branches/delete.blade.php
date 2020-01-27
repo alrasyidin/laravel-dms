@@ -16,12 +16,12 @@
                     <!-- Box primary-->
                     <div class="box box-primary">
                         <div class="box-header with-border">
-                            <a href="{{ route('branches', [], false) }}" class="btn btn-default">Branches</a>
+                            <a href="{{ route('branches', [], false) }}" class="btn btn-default">Fakultas</a>
                         </div>
 
                         {!! Form::open(['action' => ['BranchesController@destroy', $branch->branch_id], 'method' => 'POST', 'autocomplete' => 'off']) !!}
                             <div class="box-body">
-                                <p>Are you sure you want to delete the <em>{{ $branch->branch_name }}</em> Branch?</p>
+                                <p>Apakah anda yakin ingin menghapus <em>{{ $branch->branch_name }}</em> Fakultas?</p>
                             </div>
                             <!-- /.box-body -->
                             <div class="box-footer">

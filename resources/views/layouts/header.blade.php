@@ -3,9 +3,9 @@
             <!-- Logo -->
             <a href="{{ route('index', [], false) }}" class="logo">
                 <!-- mini logo for sidebar mini 50x50 pixels -->
-                <span class="logo-mini"><b>D</b>MS</span>
+                <span class="logo-mini"><b>D</b>MS UNLA</span>
                 <!-- logo for regular state and mobile devices -->
-                <span class="logo-lg"><b>D</b>MS</span>
+                <span class="logo-lg"><b>D</b>MS UNLA</span>
             </a>
             <!-- Header Navbar: style can be found in header.less -->
             <nav class="navbar navbar-static-top">
@@ -30,7 +30,7 @@
                                     <img src="{{ asset('assets/img/avatar5.png') }}" class="img-circle" alt="User Image">
                                     <p>
                                         {{ ucfirst(Auth::user()->username) }}
-                                        <small>Member since {{ ucfirst(Auth::user()->created_at->format('M. Y')) }}</small>
+                                        <small>Anggota sejak {{ ucfirst(Auth::user()->created_at->format('M. Y')) }}</small>
                                     </p>
                                 </li>
                                 <!-- Menu Footer-->
